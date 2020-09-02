@@ -163,11 +163,6 @@ U-test:
 - The average Ozone concentration is the same in low minority and high minority block groups
 
 
-#### Why do the results matter?
-***insert stats here
-
-
-
 # Next Steps
 
 One thing I noticed in the data is a strong difference in the trends in the subset of Alameda county data versus the trends in the US or even just in the state of California.
