@@ -5,9 +5,6 @@ import scipy.stats as stats
 plt.style.use('ggplot')
 import seaborn as sns
 
-
-
-
 def plot_correlation_coefficients(dataframe, title, path_to_file):
     corr = dataframe.corr()
     ax = sns.heatmap(
@@ -32,7 +29,6 @@ def plot_histogram(series_list, color_list, label_list, x_label, y_label, title,
     ax.set_title(title)
     plt.savefig(path_to_file)
 
-
 def multiple_scatter_plots(x_list, y_list, color_list, xlabel_list, title_list, path_to_file, ax):
     for idx, (x, y, color, xlabel, title) in enumerate(zip(x_list, y_list, color_list, xlabel_list, title_list)):
         ax[idx].scatter(x, y, color=color)
@@ -40,6 +36,8 @@ def multiple_scatter_plots(x_list, y_list, color_list, xlabel_list, title_list, 
         ax[idx].set_xlabel(xlabel)
     plt.tight_layout
     plt.savefig(path_to_file)
+
+
 
 if __name__ == "__main__":
     pass
